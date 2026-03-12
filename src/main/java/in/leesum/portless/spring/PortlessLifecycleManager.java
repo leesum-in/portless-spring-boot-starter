@@ -1,7 +1,7 @@
 package in.leesum.portless.spring;
 
 import org.springframework.beans.factory.DisposableBean;
-import org.springframework.boot.web.context.WebServerInitializedEvent;
+import org.springframework.boot.web.server.context.WebServerInitializedEvent;
 import org.springframework.context.event.EventListener;
 
 import java.io.IOException;

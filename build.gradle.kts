@@ -2,7 +2,7 @@ plugins {
     `java-library`
     `maven-publish`
     jacoco
-    id("org.springframework.boot") version "3.4.3" apply false
+    id("org.springframework.boot") version "4.0.0" apply false
     id("io.spring.dependency-management") version "1.1.7"
 }
 
@@ -26,11 +26,12 @@ dependencyManagement {
 
 dependencies {
     api("org.springframework.boot:spring-boot-autoconfigure")
-    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-webmvc")
 
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
 tasks.withType<Test> {
