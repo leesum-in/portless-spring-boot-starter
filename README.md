@@ -6,7 +6,7 @@
 [![Spring Boot 3.x](https://img.shields.io/badge/Spring%20Boot-3.x-green)](https://spring.io/projects/spring-boot)
 [![Coverage 92%](https://img.shields.io/badge/coverage-92%25-brightgreen)](build/reports/jacoco/test/html/index.html)
 
-Spring Boot Starter for [Portless](https://github.com/nicolo-ribaudo/portless). Gives every Spring Boot app a stable `.localhost` URL — no port conflicts, no memorizing port numbers.
+Spring Boot Starter for [Portless](https://github.com/vercel-labs/portless). Gives every Spring Boot app a stable `.localhost` URL — no port conflicts, no memorizing port numbers.
 
 ```
 http://myapp.localhost:1355    # instead of http://localhost:8080
@@ -24,7 +24,7 @@ When running multiple Spring Boot apps locally, you deal with:
 - **Port memorization** — `api` on `:8081`, `admin` on `:8082`, `gateway` on `:8083`...
 - **Cookie/storage clashes** — everything is `localhost`, just different ports
 
-[Portless](https://github.com/nicolo-ribaudo/portless) solves this with named `.localhost` URLs, but only works as a CLI wrapper (`portless run gradle bootRun`). That means no IntelliJ debugger, no Spring Boot DevTools reload, no run configurations.
+[Portless](https://github.com/vercel-labs/portless) solves this with named `.localhost` URLs, but only works as a CLI wrapper (`portless run gradle bootRun`). That means no IntelliJ debugger, no Spring Boot DevTools reload, no run configurations.
 
 **This starter fixes that.** Drop it in as a dependency and your app automatically registers with the Portless proxy on startup — from any launch method.
 
@@ -186,7 +186,7 @@ Set `portless.enabled=false` or remove the dependency. The starter is a no-op wh
 
 - Java 17+
 - Spring Boot 3.x
-- [`portless`](https://github.com/nicolo-ribaudo/portless) CLI (`npm install -g portless@latest`)
+- [`portless`](https://github.com/vercel-labs/portless) CLI (`npm install -g portless@latest`)
 
 ## Building from Source
 
