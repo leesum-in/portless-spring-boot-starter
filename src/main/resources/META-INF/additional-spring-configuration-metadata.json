@@ -1,0 +1,43 @@
+{
+  "properties": [
+    {
+      "name": "portless.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable or disable Portless integration.",
+      "defaultValue": true
+    },
+    {
+      "name": "portless.name",
+      "type": "java.lang.String",
+      "description": "Hostname prefix for the Portless route. Defaults to spring.application.name."
+    },
+    {
+      "name": "portless.state-dir",
+      "type": "java.lang.String",
+      "description": "Path to the Portless state directory. Auto-detected if not set."
+    },
+    {
+      "name": "portless.min-port",
+      "type": "java.lang.Integer",
+      "description": "Minimum port number for random port allocation.",
+      "defaultValue": 8000
+    },
+    {
+      "name": "portless.max-port",
+      "type": "java.lang.Integer",
+      "description": "Maximum port number for random port allocation.",
+      "defaultValue": 8999
+    },
+    {
+      "name": "portless.force",
+      "type": "java.lang.Boolean",
+      "description": "Force overwrite existing route for the same hostname.",
+      "defaultValue": false
+    },
+    {
+      "name": "portless.tld",
+      "type": "java.lang.String",
+      "description": "Custom TLD for the proxy (e.g. 'test'). When set, proxy starts with --https --tld. Defaults to 'localhost' if not set."
+    }
+  ]
+}
